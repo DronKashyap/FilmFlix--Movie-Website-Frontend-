@@ -1,0 +1,128 @@
+body{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+
+.header{
+  height: 500px;
+  width: 100%;
+  background-color:blue;
+  position: relative;
+  background: linear-gradient(180deg,transparent,rgb(0,0,0));
+}
+
+.header_video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  z-index:-1;
+  position: absolute;
+}
+
+.navbar{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top:0px;
+  left:0px;
+  z-index:1;
+  width:100%;
+}
+
+.navbar a{
+  font-size: 25px;
+  color: #a0a0a0;
+  padding: 3px 25px;
+  text-decoration: none;
+  transition: .5s linear;
+}
+
+.navbar a:hover{
+  color: white;
+  text-decoration: underline;
+  transition: .5s linear;
+  opacity:100%;
+}
+
+.movieinfo{
+  position: absolute;
+  padding-left: 50px;
+  margin-top: 250px;
+  z-index: 3;
+  display: block;
+
+}
+
+p{
+  color: white;
+  font-size: 10px;
+  font-family: sans-serif;
+  width:300px;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1{
+  color: white;
+  font-family: sans-serif;
+  font-size: 50px;
+  padding: 0px;
+  margin: 0px;
+}
+
+button{
+  display: block;
+color: white;
+text-decoration: underline;
+font-size: 20px;
+background: linear-gradient(90deg,#00bdff,#0079ff);
+border-radius: 10%;
+border: none;
+margin-top: 30px;
+padding: 3px 7px;
+transition: all .2s ease-in-out;
+
+}
+
+button:hover{
+  transform: scale(1.2);
+}
+
+h6 {
+  display: inline;
+  color: white;
+}
+
+section {
+  width:100%;
+  height: auto;
+}
+
+section .cards{
+  margin-top: 10px;
+  height :200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section .cards .card{
+width: 130px;
+position: relative;
+height: 180px;
+border-radius: 8px;
+margin-right: 10px;
+background:black;
+transition: 0.3s linear;
+overflow: scroll;
+}
+
+.card:hover {
+  transform: scale(1.3); 
+  z-index: 10;
+}
